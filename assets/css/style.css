@@ -1,0 +1,46 @@
+body{
+  overflow: hidden;
+  background-color: #37474f;
+  font:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.background{
+  z-index: 0;
+  position: absolute;
+}
+.wrapper{
+  position: relative;
+  z-index: 10;
+}
+.logo{
+  font-family: 'Fredoka One', cursive;
+}
+.nav{
+  background: rgba(38,50,56,0.8);
+  min-height: 50px;
+}
+.nav ul {
+  display: inline-flex;
+  display: -moz-inline-box;
+  width: 280px;
+  margin: 6px auto;
+}
+.nav ul li{
+  margin: 0 25px 0 25px;
+  padding: 5px;
+}
+.greeting{
+  margin: 5% 50px 0 70px !important;
+  color: #039be5;
+}
+@media screen and (max-width: 1280px) {
+  .nav ul li{
+    margin: 0 15px 0 15px;
+  }
+}
+h1 span{
+  font-weight: bolder;
+  margin: -5px;
+  /*font-family: 'Audiowide', cursive;*/
+  /*font-family: 'Archivo Black', sans-serif;*/
+  font-family: 'Fredoka One', cursive;
+}
