@@ -38,12 +38,12 @@ stats.domElement.style.top = '0px';
             context = canvas.getContext('2d'),
             defaults = {
                 star: {
-                    color: 'rgba(255, 255, 255, .5)',
+                    color: 'rgba(126,87,194, .5)',
                     width: 1,
                     randomWidth: true
                 },
                 line: {
-                    color: 'rgba(255, 255, 255, .5)',
+                    color: 'rgba(126,87,194, .5)',
                     width: 0.2
                 },
                 position: {
@@ -53,8 +53,8 @@ stats.domElement.style.top = '0px';
                 width: window.innerWidth,
                 height: window.innerHeight,
                 velocity: 0.1,
-                length: 100,
-                distance: 120,
+                length: 250,
+                distance: 100,
                 radius: 150,
                 stars: []
             },
