@@ -37,6 +37,10 @@ body{
   overflow: hidden;
   background-color: #eceff1;
   font:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 .background{
   z-index: 0;
@@ -46,8 +50,8 @@ body{
   position: relative;
   z-index: 10;
 }
-.logo{
-  font-family: 'Fredoka One', cursive;
+.top{
+margin-top: 7%;
 }
 .nav{
   background: rgba(207,216,220,0.8);
@@ -63,6 +67,17 @@ body{
   margin: 0 25px 0 25px;
   padding: 5px;
 }
+
+.nav ul li a span{
+  width: 0px;
+  height: 0px;
+  font-size: 0px;
+  display: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
 .greeting{
   margin: 5% 50px 0 70px !important;
   color: #039be5;
@@ -72,10 +87,82 @@ body{
     margin: 0 15px 0 15px;
   }
 }
-h1 span{
-  font-weight: bolder;
-  margin: -5px;
-  /*font-family: 'Audiowide', cursive;*/
-  /*font-family: 'Archivo Black', sans-serif;*/
-  font-family: 'Fredoka One', cursive;
+h1{
+  cursor:default;
 }
+h1{
+  margin-bottom: 0px !important;
+}
+span{
+  font-weight: 100;
+  color: rgba(33,150,243, 1);
+}
+h1 span{
+  cursor:default;
+  margin: -8px;
+  font-weight: 100;
+  color: rgba(33,150,243, 1);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+h1 span:hover{
+  color: #673ab7;
+}
+.center{
+  text-align: center;
+}
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+.logo h1 {
+  margin-bottom: -12px !important;
+}
+.logo h1 span{
+
+  margin: 0 -13px 0 -13px;
+  font-size: 10rem;
+  font-weight: 100 !important;
+
+}
+.logo span{
+  margin-left: 20px;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+     top: 100%;
+     left: 50%;
+     margin-left: -60px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
