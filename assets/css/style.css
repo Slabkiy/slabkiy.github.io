@@ -59,9 +59,6 @@ margin-top: 7%;
 .nav{
   background: rgba(207,216,220,0.8);
   min-height: 50px;
-  position: fixed;
-top: 0;
-width: 100%;
 }
 .nav ul {
   display: inline-flex;
