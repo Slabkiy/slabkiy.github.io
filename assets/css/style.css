@@ -56,6 +56,9 @@ margin-top: 7%;
 .nav{
   background: rgba(207,216,220,0.8);
   min-height: 50px;
+  position: fixed;
+top: 0;
+width: 100%;
 }
 .nav ul {
   display: inline-flex;
@@ -78,28 +81,40 @@ margin-top: 7%;
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-.greeting{
-  margin: 5% 50px 0 70px !important;
-  color: #039be5;
+.nav ul li a{
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.nav ul li a:hover{
+  color: #673ab7;
+
+}
+.nav ul li a:hover i{
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 1280px) {
   .nav ul li{
     margin: 0 15px 0 15px;
   }
 }
-h1{
+ h1{
   cursor:default;
 }
-h1{
+ h1{
   margin-bottom: 0px !important;
 }
-span{
+ h1 p{
+  margin: 0;
+}
+ span{
   font-weight: 100;
   color: rgba(33,150,243, 1);
 }
-h1 span{
+ h1 span{
   cursor:default;
-  margin: -8px;
+  /*margin: -8px;*/
   font-weight: 100;
   color: rgba(33,150,243, 1);
   -webkit-transition: all 0.2s;
@@ -107,11 +122,80 @@ h1 span{
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-h1 span:hover{
+h1  p span:hover{
   color: #673ab7;
 }
+.sa h1  p span:hover{
+  color: #673ab7;
+}
+.moduleParagraphs p span:hover{
+  color: #673ab7;
+}
+.moduleParagraphs p{
+  cursor:default;
+}
+.moduleParagraphs p{
+  margin-bottom: 0px !important;
+}
+.moduleParagraphs p p{
+  margin: 0;
+}
+.moduleParagraphs span{
+  font-weight: 100;
+  color: rgba(33,150,243, 1);
+}
+.moduleParagraphs p span{
+  cursor:default;
+  /*margin: -8px;*/
+  font-weight: 300;
+  color: rgba(33,150,243, 1);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.moduleParagraphs p span:hover{
+  color: #673ab7;
+}
+.moduleParagraphs:before{
+  content: "<p>";
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #b0bec5;
+  font-style: italic;
+  display: block;
+}
+.moduleParagraphs:after{
+  content: "</p>";
+  text-align: right;;
+  font-size: 14px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #b0bec5;
+  font-style: italic;
+  display: block;
+}
+/*.moduleTitle:before{
+  content: "for ( var i = 0; i < p.lendth; i++ ){";
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #b0bec5;
+  font-style: italic;
+  display: block;
+}
+.moduleTitle::after{
+  content: "}       // html, css, js";
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #b0bec5;  font-style: italic;
+  display: block;
+}*/
 .center{
-  text-align: center;
+ text-align: left;
+  margin: 0 auto;
+  float: none !important;
 }
 /* Tooltip container */
 .tooltip {
@@ -119,50 +203,170 @@ h1 span:hover{
     display: inline-block;
     border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
-.logo h1 {
+.sa{
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+}
+/*.sa::before{
+  content: "<h1>";
+  text-align: left;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #b0bec5;
+  font-style: italic;
+  display: block;
+}*/
+.sa::after{
+  content: "</h1>";
+  text-align: right;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #b0bec5;
+  font-style: italic;
+  display: block;
+}
+.sa h1 {
   margin-bottom: -12px !important;
 }
-.logo h1 span{
+.sa h1 span{
 
   margin: 0 -13px 0 -13px;
   font-size: 10rem;
   font-weight: 100 !important;
 
 }
-.logo span{
+.sa span{
   margin-left: 20px;
   letter-spacing: 5px;
   font-weight: 500;
 }
-/* Tooltip text */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-     top: 100%;
-     left: 50%;
-     margin-left: -60px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+h5{
+  font-weight: 100;
+}
+.main{
+  display: none;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+.about{
+  display: none;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+.skills{
+  display: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.work{
+  display: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.contacts{
+  display: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.active{
+    display: block;
 
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
+    -webkit-animation: slide-down .3s ease-out;
+    -moz-animation: slide-down .3s ease-out;
+}
+@-webkit-keyframes slide-down {
+      0% { opacity: 0; -webkit-transform: translateY(-100%); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@-moz-keyframes slide-down {
+      0% { opacity: 0; -moz-transform: translateY(-100%); }
+    100% { opacity: 1; -moz-transform: translateY(0); }
+}
+.about-text{
+  margin: 0 auto;
+  width: 60%;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
+.skillPreview{
+  perspective: 500px;
+  perspective-origin: center -5em;
 }
-.tooltip .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    bottom: 100%;  /* At the top of the tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
+.skillPreview .side, .cube {
+  width: 20em;
+  height: 20em;
   }
+
+.skillPreview .cube {
+  margin: 5em auto 0;
+  /*border: 2px dotted white;*/
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+  }
+  .skillPreview .cube:before,  .cube:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15em;
+    height: 15em;
+    /*border: 2px dotted white;*/
+    }
+    .skillPreview .cube:before {
+      transform: rotateX(90deg);
+      }
+    .skillPreview .cube:after {
+      transform: rotatey(90deg);
+      }
+
+.skillPreview .side {
+  position: absolute;
+  width: 15em;
+  height: 15em;
+/*  border: 2px solid white;*/
+  opacity: 1;
+  }
+
+.skillPreview .back {
+  transform: translateZ(-7.5em);
+  background: rgba(13,71,161, .7) url('../images/CSS3.png') no-repeat;
+  background-size: cover;
+  }
+.skillPreview .left {
+  transform: translateX(-7.5em) rotateY(90deg);
+  background: rgba(13,71,161, .7) url('../images/HTML5.png') no-repeat;
+  background-size: cover;
+  }
+.skillPreview .right {
+  transform: translateX(7.5em) rotateY(90deg);
+  background: rgba(13,71,161, .7) url('../images/php.png') no-repeat;
+  background-size: contain;
+  }
+.skillPreview .top {
+  transform: translateY(-9em) rotateX(90deg);
+  background: rgba(13,71,161, .7) url('../images/mysql.png') no-repeat;
+  background-size: contain;
+  }
+.skillPreview .bottom {
+  transform: translateY(7.5em) rotateX(90deg);
+  background: rgba(13,71,161, .7) url('../images/Javascript.png') no-repeat;
+  background-size: cover;
+  }
+.skillPreview .front {
+  transform: translateZ(7.5em);
+  background: rgba(13,71,161, .7) url('../images/PostgreSQL.png') no-repeat;
+  background-size: cover;
+  }
+
+@keyframes rotate {
+  100% {
+    transform: rotatex(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
