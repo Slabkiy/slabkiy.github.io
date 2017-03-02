@@ -6,31 +6,32 @@
 	<link href="assets/css/material.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Audiowide|Fredoka+One" rel="stylesheet">
 	<link rel="stylesheet" href="assets/materialize/css/materialize.css" media="screen,projection" />
 	<link rel="stylesheet" href="assets/socicon/styles.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/black.css" id="invert_color">
 </head>
 <body>
 	<div class="background"></div>
 	<div class="wrapper">
-
 		<div class="row nav z-depth-1">
 			<div class="container">
 					<div class="col s12 m8 l4"><a href="#main" class="logo"><h5>SA - web developer</h5></a></div>
 			    <div class="col s12 m8 l4">
 						<ul>
 							<li>
-								<a href="#about" title="About"><i class="small material-icons">person_pin</i></a>
+								<a href="#about" title="About"><i class="material-icons">person_pin</i></a>
 							</li>
 							<li>
-								<a href="#skills" title="Skills" ><i class="small material-icons">code</i></a>
+								<a href="#skills" title="Skills" ><i class="material-icons">code</i></a>
 							</li>
 							<li>
-								<a href="#work" title="My work"><i class="small material-icons">work</i></a>
+								<a href="#work" title="My work"><i class="material-icons">work</i></a>
 							</li>
 							<li>
-								<a href="#contacts" title="Contacts"><i class="small material-icons">email</i></a>
+								<a href="#contacts" title="Contacts"><i class="material-icons">email</i></a>
 							</li>
 						</ul>
 					</div>
@@ -49,6 +50,7 @@
 					</div>
 			</div>
 		</div>
+		<div class="invert-color"><i class="material-icons">wb_incandescent</i></div>
 		<section class="main">
 		<div class="row top">
 			<div class="col s12 m8 l4 center">
@@ -62,7 +64,9 @@
 		</div>
 		<div class="row">
 			<div class="col s12 m8 l4 center">
-				<h1 class="moduleTitle" data = "Hi!\I`m Andrey,\web-developer."></h1>
+				<div class="greating">
+					<h1 class="moduleTitle" data = "Hi!\I`m Andrey,\web-developer."></h1>
+				</div>
 			</div>
 		</div>
 		</section>
@@ -70,9 +74,36 @@
 			<div class="row top">
 				<div class="col s12 m6">
 					<div class="about-text">
-						<h1 class="moduleTitle" data = "About"></h1>
-						<p class="moduleParagraphs" data = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
+						<!--<h1 class="moduleTitle" data = "About"></h1>-->
+						<!--<p class="moduleParagraphs" data = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."> -->
 						</p>
+						<ul class="collapsible popout" data-collapsible="accordion">
+						    <li>
+						      <div class="collapsible-header"><i class="material-icons">person_pin</i>About me</div>
+						      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+						    </li>
+						    <li>
+						      <div class="collapsible-header active"><i class="material-icons">library_books</i>Education</div>
+						      <div class="collapsible-body"><span class="moduleParagraphs" data = "In 2014 graduated from secondary vocational education of the St. Petersburg National University, Mechanics and Optics.\ In 2015 joined the faculty of information security in the St. Petersburg University, Mechanics and Optics."</span></div>
+						    </li>
+						    <li>
+						      <div class="collapsible-header"><i class="material-icons">work</i>Career</div>
+						      <div class="collapsible-body"><span class="moduleParagraphs" data = "2015-2016 worked as a freelancer. \"> </span></div>
+						    </li>
+						  </ul>
+					</div>
+				</div>
+				<div class="col s12 m6">
+					
+				</div>
+			</div>
+		</section>
+		<section class="skills">
+			<div class="row top">
+				<div class="col s12 m6">
+					<div class="skills-text">
+						<h1 class="moduleTitle" data = "Experience with technologies:"></h1>
+						<p class="moduleParagraphs" data = "Javascript (fabricjs, TogetherJS)\CSS/CSS3 (Materialize, Bootstrap)\HTML5\PHP (Codeigniter)\Apache HTTP Server\MySQL, PostgreSQL"></p>
 					</div>
 				</div>
 				<div class="col s12 m6">
@@ -89,9 +120,6 @@
 				</div>
 			</div>
 		</section>
-		<section class="skills">
-
-		</section>
 		<section class="work">
 
 		</section>
@@ -102,10 +130,15 @@
 	<script src="assets/js/Stats.js"></script>
 	<script src="assets/js/zepto.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
+ 	<script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
 	<script type="text/javascript" src="assets/fabricjs/dist/fabric.js"></script>
 	<script type="text/javascript" src="assets/js/sctipt.js"></script>
 	<script type="text/javascript" src="assets/js/background.js"></script>
-
+	<script type="text/javascript">
+		 $(document).ready(function(){
+		    $('.collapsible').collapsible();
+		  });
+		      
+	</script>
 </body>
 </html>

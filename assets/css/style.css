@@ -38,12 +38,29 @@
 }
 body{
   overflow: hidden;
-  background-color: #eceff1;
+  
+  /*background-color: rgba(0,0,0,0);*/
   font:  'Helvetica Neue', Helvetica, Arial, sans-serif;
   -moz-user-select: none;
   -khtml-user-select: none;
   user-select: none;
   cursor: default;
+}
+.invert-color{
+	display: block;
+	position: absolute;
+	z-index: 9999;
+	left: 150px;
+	top: 200px;
+	color: rgba(33,150,243, 1);
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.invert-color:hover{
+color: #673ab7;
 }
 .background{
   z-index: 0;
@@ -57,7 +74,6 @@ body{
 margin-top: 7%;
 }
 .nav{
-  background: rgba(207,216,220,0.8);
   min-height: 50px;
 }
 .nav ul {
@@ -91,6 +107,14 @@ margin-top: 7%;
   color: #673ab7;
 
 }
+.collapsible-header{
+  /*background-color: rgba(255,255,255,0.1);*/
+  border-bottom: 1px solid #039be5;
+  color: #039be5;
+}
+.collapsible-body{
+  border-bottom: 1px solid #039be5;
+}
 @media screen and (max-width: 1280px) {
   .nav ul li{
     margin: 0 15px 0 15px;
@@ -106,6 +130,7 @@ margin-top: 7%;
   margin: 0;
 }
  span{
+  font-size: 1.2em;
   font-weight: 100;
   color: rgba(33,150,243, 1);
 }
@@ -145,6 +170,7 @@ h1  p span:hover{
   cursor:default;
   /*margin: -8px;*/
   font-weight: 300;
+  font-size: 1.2em;
   color: rgba(33,150,243, 1);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -166,6 +192,15 @@ h1  p span:hover{
 .moduleParagraphs:after{
   content: "</p>";
   text-align: right;;
+  font-size: 14px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #b0bec5;
+  font-style: italic;
+  display: block;
+}
+.greating:after{
+  content: "Front End, Back End Developer / JS / HTML / CSS";
+  text-align: left;
   font-size: 14px;
   font-family: 'Gloria Hallelujah', cursive;
   color: #b0bec5;
@@ -237,7 +272,7 @@ h1  p span:hover{
   font-weight: 500;
 }
 h5{
-  font-weight: 100;
+  font-weight: 300;
 }
 .main{
   display: none;
@@ -292,7 +327,10 @@ h5{
   margin: 0 auto;
   width: 60%;
 }
-
+.skills-text{
+  margin: 0 auto;
+  width: 60%;
+}
 .skillPreview{
   perspective: 500px;
   perspective-origin: center -5em;

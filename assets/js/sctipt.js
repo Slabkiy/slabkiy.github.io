@@ -52,3 +52,14 @@ for (var k = 0; k < moduleParagraphs.length; k++) {
 
     }
 }
+
+var black = true;
+document.getElementsByClassName('invert-color')[0].addEventListener('click', function(){
+    black = !black;
+    if(black){
+        document.getElementById('invert_color').href="assets/css/black.css";
+    }else{
+        document.getElementById('invert_color').href="assets/css/white.css";
+    }
+    
+});
