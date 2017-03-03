@@ -46,6 +46,9 @@ body{
   user-select: none;
   cursor: default;
 }
+.logo-top{
+  text-align: center;
+}
 .invert-color{
 	display: block;
 	position: absolute;
@@ -130,6 +133,26 @@ margin-top: 7%;
 @media screen and (max-width: 1280px) {
   .nav ul li{
     margin: 0 15px 0 15px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .nav ul li a i{
+    font-size: 7em;
+  }
+  .nav ul li{
+    margin: 0 40px 0 40px;
+  }
+  .logo-top h5{
+    font-size: 3.64em;
+  }
+  .invert-color{
+    top: 300px;
+    right: 100px;
+    left: auto;
+
+  }
+  .invert-color i{
+    font-size: 5em;
   }
 }
  h1{
