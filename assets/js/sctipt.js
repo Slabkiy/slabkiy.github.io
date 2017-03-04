@@ -11,6 +11,8 @@ for (var i = 0; i < a.length; i++) {
     });
 }
 
+
+        
 function openSection(id) {
 
     section = document.getElementsByTagName('section');
