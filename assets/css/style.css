@@ -24,7 +24,6 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
@@ -45,6 +44,7 @@ body{
   -khtml-user-select: none;
   user-select: none;
   cursor: default;
+
 }
 .logo-top{
   text-align: center;
@@ -54,8 +54,8 @@ body{
 	position: absolute;
 	z-index: 9999;
 	left: 150px;
-	top: 200px;
-	color: rgba(33,150,243, 1);
+	top: 150px;
+	/*color: rgba(33,150,243, 1);*/
 	cursor: pointer;
 	-webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -72,7 +72,6 @@ body{
 .card{
   min-height: 300px;
   background-color: rgba(255,255,255,0.1);
-  color: #039be5;
 }
 .invert-color:hover{
 color: #673ab7;
@@ -125,7 +124,6 @@ margin-top: 7%;
 .collapsible-header{
   /*background-color: rgba(255,255,255,0.1);*/
   border-bottom: 1px solid #039be5;
-  color: #039be5;
 }
 .collapsible-body{
   border-bottom: 1px solid #039be5;
@@ -167,13 +165,13 @@ margin-top: 7%;
  span{
   font-size: 1.2em;
   font-weight: 100;
-  color: rgba(33,150,243, 1);
+  /*/color: rgba(33,150,243, 1);*/
 }
  h1 span{
   cursor:default;
   /*margin: -8px;*/
   font-weight: 100;
-  color: rgba(33,150,243, 1);
+ /* color: rgba(33,150,243, 1);*/
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -199,14 +197,14 @@ h1  p span:hover{
 }
 .moduleParagraphs span{
   font-weight: 100;
-  color: rgba(33,150,243, 1);
+   /*             color: rgba(33,150,243, 1);*/
 }
 .moduleParagraphs p span{
   cursor:default;
   /*margin: -8px;*/
   font-weight: 300;
   font-size: 1.2em;
-  color: rgba(33,150,243, 1);
+ /* color: rgba(33,150,243, 1);*/
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -242,6 +240,12 @@ h1  p span:hover{
   font-style: italic;
   display: block;
 }
+input:not([type]), input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"], textarea.materialize-textarea{
+  
+}
+.input-field label{
+ 
+}
 /*.moduleTitle:before{
   content: "for ( var i = 0; i < p.lendth; i++ ){";
   text-align: left;
@@ -259,6 +263,9 @@ h1  p span:hover{
   color: #b0bec5;  font-style: italic;
   display: block;
 }*/
+.text-center{
+  text-align: center;
+}
 .center{
  text-align: left;
   margin: 0 auto;
